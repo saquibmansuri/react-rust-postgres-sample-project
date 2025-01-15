@@ -7,7 +7,7 @@ function App() {
   useEffect(() => {
     fetch("/api/users")
       .then((res) => res.json())
-      .then((res) => setMessage(`Hello with ${res.length} users`))
+      .then((res) => setMessage(`Hello World with ${res.length} users`))
       .catch(console.error);
   }, [setMessage]);
   return (
